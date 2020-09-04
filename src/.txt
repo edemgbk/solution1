@@ -1,0 +1,2 @@
+Hosted UI Endpoint: https://solution11e6187bc-1e6187bc-new.auth.us-east-1.amazoncognito.com/
+Test Your Hosted UI Endpoint: https://solution11e6187bc-1e6187bc-new.auth.us-east-1.amazoncognito.com/login?response_type=code&client_id=3t7asn1edtemcp3mn6pdr2r54m&redirect_uri=https://master.d2l5bp7u3281ji.amplifyapp.com/home/

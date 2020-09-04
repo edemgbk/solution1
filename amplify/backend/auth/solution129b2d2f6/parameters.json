@@ -74,8 +74,8 @@
         }
     ],
     "hostedUI": true,
-    "hostedUIDomainName": "solution13b47be6a-3b47be6a",
+    "hostedUIDomainName": "solution11e6187bc-1e6187bc",
     "authProvidersUserPool": [],
     "hostedUIProviderMeta": "[]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3001/home/\"],\"LogoutURLs\":[\"http://localhost:3001/\"]}"
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://master.d2l5bp7u3281ji.amplifyapp.com/home/\"],\"LogoutURLs\":[\"https://master.d2l5bp7u3281ji.amplifyapp.com/\"]}"
 }

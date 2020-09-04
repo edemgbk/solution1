@@ -23,6 +23,9 @@ const Home = () => (
         nulla interdum justo. Pellentesque dignissim, sapien et congue rutrum,
         lorem tortor dapibus turpis, sit amet vestibulum eros mi et odio.
       </p>
+      <h6>video below</h6>
+      <div class="s3bubble" data-code="enter-your-code-here"></div>
+
     </div>
   );
   

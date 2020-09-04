@@ -1,0 +1,40 @@
+{
+    "function": {
+        "solution129b2d2f6CustomMessage": {
+            "build": true,
+            "providerPlugin": "awscloudformation",
+            "service": "Lambda"
+        },
+        "solution129b2d2f6PreTokenGeneration": {
+            "build": true,
+            "providerPlugin": "awscloudformation",
+            "service": "Lambda"
+        }
+    },
+    "auth": {
+        "solution129b2d2f6": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [
+                {
+                    "category": "function",
+                    "resourceName": "solution129b2d2f6CustomMessage",
+                    "triggerProvider": "Cognito",
+                    "attributes": [
+                        "Arn",
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "solution129b2d2f6PreTokenGeneration",
+                    "triggerProvider": "Cognito",
+                    "attributes": [
+                        "Arn",
+                        "Name"
+                    ]
+                }
+            ]
+        }
+    }
+}

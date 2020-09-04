@@ -1,0 +1,81 @@
+{
+    "identityPoolName": "solution129b2d2f6_identitypool_29b2d2f6",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "soluti29b2d2f6",
+    "userPoolName": "solution129b2d2f6_userpool_29b2d2f6",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "userpoolClientLambdaRole": "soluti29b2d2f6_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "sharedId": "29b2d2f6",
+    "resourceName": "solution129b2d2f6",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "defaultSocial",
+    "triggers": "{\"CustomMessage\":[\"verification-link\"],\"PreTokenGeneration\":[\"alter-claims\"]}",
+    "userPoolGroupList": [],
+    "verificationBucketName": "solution129b2d2f6verificationbucket",
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "permissions": [],
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "solution129b2d2f6CustomMessage",
+            "triggerProvider": "Cognito",
+            "attributes": [
+                "Arn",
+                "Name"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "solution129b2d2f6PreTokenGeneration",
+            "triggerProvider": "Cognito",
+            "attributes": [
+                "Arn",
+                "Name"
+            ]
+        }
+    ],
+    "hostedUI": true,
+    "hostedUIDomainName": "solution13b47be6a-3b47be6a",
+    "authProvidersUserPool": [],
+    "hostedUIProviderMeta": "[]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3001/home/\"],\"LogoutURLs\":[\"http://localhost:3001/\"]}"
+}

@@ -1,0 +1,20 @@
+{
+  "trigger": true,
+  "modules": [
+    "verification-link"
+  ],
+  "parentResource": "solution129b2d2f6",
+  "functionName": "solution129b2d2f6CustomMessage",
+  "resourceName": "solution129b2d2f6CustomMessage",
+  "parentStack": "auth",
+  "triggerEnvs": "[{\"key\":\"RESOURCENAME\",\"value\":\"resourceName\"}]",
+  "triggerDir": "/usr/local/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/utils/../triggers/CustomMessage",
+  "triggerTemplate": "CustomMessage.json.ejs",
+  "roleName": "solution129b2d2f6CustomMessage",
+  "skipEdit": true,
+  "REDIRECTURL": "http://localhost:3001/home/",
+  "EMAILSUBJECT": "Account Confirmation",
+  "EMAILMESSAGE": "",
+  "RESOURCENAME": "resourceName",
+  "triggerEventPath": "CustomMessage.event.json"
+}

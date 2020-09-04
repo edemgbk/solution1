@@ -1,0 +1,56 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-solution1-dev-133254-authRole",
+            "UnauthRoleArn": "arn:aws:iam::773448447528:role/amplify-solution1-dev-133254-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::773448447528:role/amplify-solution1-dev-133254-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-solution1-dev-133254-deployment",
+            "UnauthRoleName": "amplify-solution1-dev-133254-unauthRole",
+            "StackName": "amplify-solution1-dev-133254",
+            "StackId": "arn:aws:cloudformation:us-east-1:773448447528:stack/amplify-solution1-dev-133254/25eeb8e0-eeb3-11ea-88b8-0afbd365c3b9",
+            "AmplifyAppId": "dwca4g2egsgnp"
+        },
+        "categories": {
+            "function": {
+                "solution129b2d2f6CustomMessage": {
+                    "REDIRECTURL": "http://localhost:3001/home/",
+                    "EMAILSUBJECT": "Account Confirmation",
+                    "EMAILMESSAGE": ""
+                },
+                "solution129b2d2f6PreTokenGeneration": {}
+            },
+            "auth": {
+                "solution129b2d2f6": {}
+            }
+        }
+    },
+    "new": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-solution1-new-140832-authRole",
+            "UnauthRoleArn": "arn:aws:iam::773448447528:role/amplify-solution1-new-140832-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::773448447528:role/amplify-solution1-new-140832-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-solution1-new-140832-deployment",
+            "UnauthRoleName": "amplify-solution1-new-140832-unauthRole",
+            "StackName": "amplify-solution1-new-140832",
+            "StackId": "arn:aws:cloudformation:us-east-1:773448447528:stack/amplify-solution1-new-140832/20533aa0-eeb8-11ea-8391-12305fa4f4bd",
+            "AmplifyAppId": "dwca4g2egsgnp"
+        },
+        "categories": {
+            "auth": {
+                "solution129b2d2f6": {
+                    "hostedUIProviderCreds": "[]"
+                }
+            },
+            "function": {
+                "solution129b2d2f6CustomMessage": {
+                    "REDIRECTURL": "http://localhost:3001/home/",
+                    "EMAILSUBJECT": "",
+                    "EMAILMESSAGE": ""
+                },
+                "solution129b2d2f6PreTokenGeneration": {}
+            }
+        }
+    }
+}

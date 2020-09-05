@@ -100,7 +100,6 @@ function reducer (state, action) {
       return state
   }
 }
-
 async function checkUser(dispatch) {
   try {
     const user = await Auth.currentAuthenticatedUser()
@@ -111,7 +110,6 @@ async function checkUser(dispatch) {
     dispatch({ type: 'loaded' })
   }
 }
-
 function signOut() {
   Auth.signOut()
     .then(data => {
@@ -123,11 +121,11 @@ function signOut() {
 function Footer () {
   return (
     <div>
-      <p style={styles.footer}>To view the code for this app, click <a
+      {/* <p style={styles.footer}>To view the code for this app, click <a
         href='https://github.com/dabit3/amplify-auth-demo' target="_blank" rel="noopener noreferrer"
       style={styles.anchor}>here</a>. To learn more about AWS Amplify, click <a
         href='https://aws-amplify.github.io/' target="_blank" rel="noopener noreferrer"
-      style={styles.anchor}>here.</a></p>
+      style={styles.anchor}>here.</a></p> */}
 
 <BrowserRouter>
       <Navbar />
@@ -136,18 +134,16 @@ function Footer () {
           <Route exact path="/home">
             <Home />
           </Route>
-          
+
         </Switch>
       </div>
     </BrowserRouter>
 
 
 
-
     </div>
   )
 }
-
 const styles = {
   appContainer: {
     paddingTop: 85,
@@ -195,30 +191,24 @@ const styles = {
     height: '78vh'
   }
 }
-
 export default App
 // // src/App.js
-
 // // import useEffect hook
 // import React, { useEffect } from 'react';
 // import logo from './logo.svg';
 // import './App.css';
-
 // // import Hub
 // import { Auth, Hub } from 'aws-amplify'
-
 // function checkUser() {
 //   Auth.currentAuthenticatedUser()
 //     .then(user => console.log({ user }))
 //     .catch(err => console.log(err));
 // }
-
 // function signOut() {
 //   Auth.signOut()
 //     .then(data => console.log(data))
 //     .catch(err => console.log(err));
 // }
-
 // function App(props) {
 //   // in useEffect, we create the listener
 //   useEffect(() => {
@@ -245,10 +235,8 @@ export default App
 //         <button onClick={signOut}>Sign Out</button>
 //         <button onClick={() => Auth.federatedSignIn({provider: 'Facebook'})}>Sign In with Facebook</button>
 //         <button onClick={() => Auth.federatedSignIn({provider: 'Google'})}>Sign In with Google</button>
-
 //       </header>
 //     </div>
 //   );
 // }
-
 // export default App

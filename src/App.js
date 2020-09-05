@@ -2,6 +2,7 @@ import React, { useReducer, useEffect, useState } from 'react';
 import './App.css'
 import Header from './Header'
 import Buttons from './Buttons'
+import Content from './Content'
 import Form from './Form'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
@@ -63,10 +64,10 @@ function App() {
       }
       {
         !userState.user && !userState.loading && (
-          <Buttons
-            updateFormState={updateFormState}
-          />
-          dgfkjhchvjk
+          // <Buttons
+          //   updateFormState={updateFormState}
+          // />
+          <Content/>
         )
       }
       {

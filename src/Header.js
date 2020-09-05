@@ -10,7 +10,7 @@ export default function Header(props) {
           src={AmplifyLogo}
           style={styles.image}
         />
-        <p style={styles.header}>Amplify Auth Demo</p>
+        <p style={styles.header}>VOD DEMO</p>
 
         {/* <NavLink
               className="navbar-item"

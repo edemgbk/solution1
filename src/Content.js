@@ -1,17 +1,24 @@
 import React from 'react';
 import './App.css'
 import Buttons from './Buttons'
+import { FaFacebook, FaGoogle, FaEnvelope } from 'react-icons/fa'
 
 
 function Content(props) {
   return (
-    <div>
+      <div>
       <div style={styles.container}>
       {/* <Buttons updateFormState={updateFormState}/> */}
+      <button
+          style={{ ...styles.button, ...styles.email }}
+          onClick={() => props.updateFormState('email')}
+        >
       <p style={styles.text}>testtesttest</p>
-
+      <FaFacebook color='white' />
+          <p style={styles.text}>Sign in with Facebook</p>
+        </button>
       </div>
-    </div>
+   </div>
   );
 }
 

@@ -67,7 +67,7 @@ function App() {
           // <Buttons
           //   updateFormState={updateFormState}
           // />
-          <Content/>
+          <Content updateFormState={updateFormState}/>
         )
       }
       {

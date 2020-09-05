@@ -81,7 +81,7 @@ function App() {
               <p style={{...styles.text}}>Sign Out</p>
             </button>
 
-      
+            
           </div>
         )
       }
@@ -123,8 +123,13 @@ function signOut() {
 function Footer () {
   return (
     <div>
-    
-<     BrowserRouter>
+      <p style={styles.footer}>To view the code for this app, click <a
+        href='https://github.com/dabit3/amplify-auth-demo' target="_blank" rel="noopener noreferrer"
+      style={styles.anchor}>here</a>. To learn more about AWS Amplify, click <a
+        href='https://aws-amplify.github.io/' target="_blank" rel="noopener noreferrer"
+      style={styles.anchor}>here.</a></p>
+
+<BrowserRouter>
       <Navbar />
       <div className="container mt-2" style={{ marginTop: 40 }}>
         <Switch>
@@ -135,6 +140,9 @@ function Footer () {
         </Switch>
       </div>
     </BrowserRouter>
+
+
+
 
     </div>
   )

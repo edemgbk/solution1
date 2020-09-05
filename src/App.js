@@ -81,11 +81,24 @@ function App() {
               <p style={{...styles.text}}>Sign Out</p>
             </button>
 
-            
+            <BrowserRouter>
+      <Navbar />
+      <div className="container mt-2" style={{ marginTop: 40 }}>
+        <Switch>
+          <Route exact path="/home">
+            <Home />
+          </Route>
+
+        </Switch>
+      </div>
+    </BrowserRouter>
+
+
           </div>
         )
       }
       <Footer />
+
     </div>
   )
 }
@@ -126,18 +139,6 @@ function Footer () {
       style={styles.anchor}>here</a>. To learn more about AWS Amplify, click <a
         href='https://aws-amplify.github.io/' target="_blank" rel="noopener noreferrer"
       style={styles.anchor}>here.</a></p> */}
-
-<BrowserRouter>
-      <Navbar />
-      <div className="container mt-2" style={{ marginTop: 40 }}>
-        <Switch>
-          <Route exact path="/home">
-            <Home />
-          </Route>
-
-        </Switch>
-      </div>
-    </BrowserRouter>
 
 
 
